@@ -16,6 +16,9 @@ public class LoadServer : MonoBehaviourPunCallbacks
         if (usernameInput.GetComponent<TMP_InputField>().text.Length >= 1) {
             connect.SetActive(true);
         }
+        else {
+            connect.SetActive(false);
+        }
     }
 
     // connect is clicked
