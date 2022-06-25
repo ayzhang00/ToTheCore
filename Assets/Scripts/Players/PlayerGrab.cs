@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerGrab : MonoBehaviour
 {
+    // Requires player and objects to have Collider2ds
+    
     // Start is called before the first frame update
     void Start()
     {
