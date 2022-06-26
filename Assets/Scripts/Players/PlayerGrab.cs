@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerGrab : MonoBehaviour
 {
     // Requires player and objects to have Collider2ds
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,10 @@ public class PlayerGrab : MonoBehaviour
                 if (collided.Count > 0)
                 {
                     // If multiple nearby objects, picks up one at random
-                    collided[0].transform.SetParent(transform);
+                    if (collided[0].GetComponent<GrabbableObject>() != null)
+                    {
+                        collided[0].transform.SetParent(transform);
+                    }
                 }
             }
         }
