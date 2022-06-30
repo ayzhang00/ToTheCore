@@ -5,10 +5,6 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     public int horizontalSpeed = 2;
     public int verticalSpeed = 2;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
