@@ -24,7 +24,8 @@ public class PlayerGrab : MonoBehaviour
                 if (collided.Count > 0)
                 {
                     // If multiple nearby objects, picks up one at random
-                    if (collided[0].GetComponent<GrabbableObject>() != null)
+                    // checks the tag 
+                    if (collided[0].tag == "Grabbable")
                     {
                         collided[0].transform.SetParent(transform);
                     }
